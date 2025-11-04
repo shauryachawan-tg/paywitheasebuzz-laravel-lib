@@ -411,8 +411,8 @@
             // include file
             include_once('payment.php');
 
-            $result = response($params, $this->SALT);
-
+            $result = ebzResponse($params, $this->SALT);
+            
             return json_encode($result);
         }
 
